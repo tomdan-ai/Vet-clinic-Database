@@ -29,20 +29,6 @@ Overall, the Vet Clinic Database project provides a foundation for efficiently m
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Client</summary>
-  <ul>
-    <li>Under Development</li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li>Under Development</li>
-  </ul>
-</details>
-
-<details>
 <summary>Database</summary>
   <ul>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
@@ -98,7 +84,7 @@ To run the project:
 👤 **Tom Daniel**
 
 - GitHub: [@tomdan-ai](https://github.com/tomdan-ai)
-- Twitter: [@kvngWebstar](https://twitter.com/tom-udoh)
+- Twitter: [@kvngWebstar](https://twitter.com/TomUdoh1)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/tomudoh)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
