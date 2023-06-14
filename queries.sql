@@ -31,6 +31,8 @@ SELECT * FROM animals WHERE name != 'Gabumon';
 
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
+
+--------------------------------------------- FIRST TRANSACTION -------------------------------------------
 -- Begin the transaction
 BEGIN;
 
@@ -46,20 +48,13 @@ ROLLBACK;
 -- Verify the species column reverted to its previous state
 SELECT * FROM animals;
 
+--------------------------------------------- SECOND TRANSACTION ------------------------------------------
+
 -- Begin the transaction
 BEGIN;
 
 -- Update the species column to "digimon" for animals with name ending in "mon"
 UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
-
--- Commit the transaction
-COMMIT;
-
--- Verify the changes
-SELECT * FROM animals;
-
--- Begin the transaction
-BEGIN;
 
 -- Update the species column to "pokemon" for animals without a species
 UPDATE animals SET species = 'pokemon' WHERE species IS NULL OR species = '';
@@ -69,6 +64,8 @@ COMMIT;
 
 -- Verify the changes
 SELECT * FROM animals;
+
+--------------------------------------------- THIRD TRANSACTION -------------------------------------------
 
 -- Begin the transaction
 BEGIN;
@@ -81,6 +78,9 @@ ROLLBACK;
 
 -- Verify if all records still exist
 SELECT * FROM animals;
+
+
+--------------------------------------------- FOURTH TRANSACTION -------------------------------------------
 
 -- Begin the transaction
 BEGIN;
@@ -102,6 +102,9 @@ UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg < 0;
 
 -- Commit the transaction
 COMMIT;
+
+
+--------------------------------------------- QUERIES ------------------------------------------------
 
 -- How many animals are there?
 SELECT COUNT(*) AS total_animals FROM animals;
