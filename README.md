@@ -19,9 +19,13 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Vet clinic Database] <a name="about-project"></a>
+# 📖 Vet clinic Database <a name="about-project"></a>
 
 Overall, the Vet Clinic Database project provides a foundation for efficiently managing animal records in a veterinary clinic. It offers the ability to store, retrieve, and analyze relevant data, aiding in the smooth operation of the clinic and facilitating decision-making processes.
+
+## Vet Clinic Database Schema Diagram
+![schemata diagram](https://github.com/tomdan-ai/Vet-clinic-Database/assets/88054834/db5e89da-d979-4216-8661-20d7dc517aa9)
+
 
 
 ## 🛠 Built With <a name="built-with"></a>
